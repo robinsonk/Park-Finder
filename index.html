@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Noto+Serif+SC" rel="stylesheet">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <title>National Park Finder</title>
+    </head>
+    <header role="banner">
+        <h1>National Park Finder</h1>
+    </header>
+    <body>
+        <main>
+            <h2 class="description">Please enter the abbreviated name* of one or more states below, separated by a comma or space.</h2>
+            <h3 class="example">*For example: CO for Colorado, NV for Nevada, etc.</h3>
+            <form class="park-search-form">
+                    <input type="text" name="state-search" id="state-search" placeholder="Enter a U.S. state"></input>
+                    <input type="number" name="result-limit" id="result-limit" placeholder="Enter the number of parks to display"min="1" max="50"></input>
+                    <input type="submit" class="submit-button" value="Search for parks"></input>
+                </form>
+                <section role="region" class="results-section">
+                    <div class="results-box">
+        
+                    </div>
+                </section>
+        </main>
+        
+    </body>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="index.js"></script>
+</html>
