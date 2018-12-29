@@ -15,8 +15,10 @@
             <h2 class="description">Please enter the abbreviated name* of one or more states below, separated by a comma or space.</h2>
             <h3 class="example">*For example: CO for Colorado, NV for Nevada, etc.</h3>
             <form class="park-search-form">
+                    <p>Destination:</p>
                     <input type="text" name="state-search" id="state-search" placeholder="Enter a U.S. state"></input>
-                    <input type="number" name="result-limit" id="result-limit" placeholder="Enter the number of parks to display"min="1" max="50"></input>
+                    <p>Number of parks:</p>
+                    <input type="number" name="result-limit" id="result-limit" placeholder="Enter the number of parks to display" value="10" min="1" max="50"></input>
                     <input type="submit" class="submit-button" value="Search for parks"></input>
                 </form>
                 <section role="region" class="results-section">
